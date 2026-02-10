@@ -67,7 +67,7 @@ func main() {
 			}
 			fmt.Println(res)
 		case <-time.After(timeout):
-			return
+			fmt.Println("worker isnt healthy")
 		}
 	}
 
